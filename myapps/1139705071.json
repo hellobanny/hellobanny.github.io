@@ -1,0 +1,8 @@
+{
+	"apps":["1051212505","476039389","1233530308"],
+	"version":"1.0",
+	"title":"Photo ruler",
+	"detail":"Measure lenght and area on photo.",
+	"title-cn":"照片尺",
+	"detail-cn":"在图片上根据比例尺自动计算长度和面积。"
+}
