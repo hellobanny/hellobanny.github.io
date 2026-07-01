@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapLater Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f7fb;
+      --card: rgba(255,255,255,0.9);
+      --text: #15202b;
+      --muted: #4b5a6a;
+      --accent: #0f8b8d;
+      --border: rgba(18, 32, 43, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #071017;
+        --card: rgba(20, 28, 36, 0.92);
+        --text: #f5fbff;
+        --muted: #9eb1bf;
+        --accent: #70dfda;
+        --border: rgba(255,255,255,0.10);
+      }
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(15,139,141,0.18), transparent 26%),
+        radial-gradient(circle at bottom left, rgba(75,110,255,0.14), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    article {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 32px 24px;
+      backdrop-filter: blur(14px);
+    }
+    h1, h2 {
+      line-height: 1.25;
+      margin: 0 0 14px;
+    }
+    h1 {
+      font-size: 2.1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 28px;
+    }
+    p, li {
+      color: var(--muted);
+    }
+    ul, ol {
+      padding-left: 22px;
+    }
+    .lead {
+      color: var(--text);
+      font-size: 1.02rem;
+    }
+    .tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(15,139,141,0.12);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <div class="tag">SnapLater</div>
+      <h1>Privacy Policy</h1>
+      <p class="lead">SnapLater helps users turn screenshots into follow-up tasks while keeping data handling as local and minimal as possible.</p>
+
+      <h2>Information We Access</h2>
+      <ul>
+        <li>Screenshots and other photos you explicitly allow the app to read</li>
+        <li>Screenshot slices you choose to keep as to-do items</li>
+        <li>Recognized text generated from those screenshot slices</li>
+        <li>Calendar data only when you choose to add an item to Calendar</li>
+        <li>Purchase status used to determine whether Pro features are unlocked</li>
+      </ul>
+
+      <h2>How This Information Is Used</h2>
+      <ol>
+        <li>Find recent screenshots and place them in the Candidates queue</li>
+        <li>Let you crop and save only the important part as a to-do item</li>
+        <li>Recognize text and generate a short task summary from the saved slice</li>
+        <li>Show the first pending item in the widget</li>
+        <li>Delete original screenshots from Photos only after you confirm the action</li>
+        <li>Restore your Pro purchase status when requested</li>
+      </ol>
+
+      <h2>On-Device Processing</h2>
+      <p>SnapLater is built to prioritize on-device processing. Screenshot importing, screenshot slicing, saved image generation, and local app state storage are intended to happen on your device. Text recognition is designed to rely on Apple system capabilities on device whenever available.</p>
+
+      <h2>Photo Library Permission</h2>
+      <p>SnapLater requests full Photos access so it can read screenshots, track their status, and delete screenshots from Photos after you explicitly confirm deletion.</p>
+
+      <h2>Calendar Permission</h2>
+      <p>Calendar access is requested only when you choose to create a calendar event from a task. The app does not create calendar events automatically in the background without your action.</p>
+
+      <h2>Purchases</h2>
+      <p>If you buy SnapLater Pro, Apple handles the payment process. SnapLater only reads the entitlement needed to unlock Pro features and does not receive your bank card number or full Apple billing details.</p>
+
+      <h2>Local Storage</h2>
+      <p>To support task details and later reopening, SnapLater may save selected screenshot slices, task status data, recognized text, and generated summary content locally on your device.</p>
+
+      <h2>Deletion and Cleanup</h2>
+      <p>You can remove pending screenshots from Photos inside the app. If a screenshot has already been deleted from Photos outside the app, SnapLater may also clear its local record during later refreshes.</p>
+
+      <h2>Third-Party Sharing</h2>
+      <p>SnapLater does not intentionally sell your personal data. Except where required by Apple system frameworks for app functionality, your screenshot content is not meant to be shared with unrelated third parties by default.</p>
+
+      <h2>Policy Updates</h2>
+      <p>If this privacy policy changes in a future version, both the in-app document and the website copy should be updated together.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about privacy in SnapLater, please contact the developer through the support channel listed with the app.</p>
+    </article>
+  </main>
+</body>
+</html>
