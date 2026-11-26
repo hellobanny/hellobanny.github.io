@@ -4,23 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="Oddkit Privacy Policy: what the app accesses, what stays on your device, and how to withdraw permissions, correct or delete your data.">
+<meta name="description" content="Oddkit Privacy Policy">
 <title>Oddkit Privacy Policy</title>
 <style>
   :root{
     color-scheme: light dark;
-    --bg:#f6f4ef;
+    --bg:#f7f5f0;
     --card:#fffdf8;
     --text:#1d1a15;
     --muted:#5f594f;
     --faint:#8a8175;
     --accent:#9a6400;
-    --accent-strong:#7a4f00;
-    --accent-soft:rgba(227,160,8,.14);
     --line:rgba(29,26,21,.12);
-    --line-strong:rgba(29,26,21,.22);
-    --mark:rgba(227,160,8,.22);
-    --radius:22px;
   }
   @media (prefers-color-scheme: dark){
     :root{
@@ -30,239 +25,71 @@
       --muted:#a7b0bc;
       --faint:#7d8794;
       --accent:#f0b429;
-      --accent-strong:#ffd166;
-      --accent-soft:rgba(240,180,41,.14);
       --line:rgba(255,255,255,.10);
-      --line-strong:rgba(255,255,255,.20);
-      --mark:rgba(240,180,41,.22);
     }
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
   body{
     margin:0;
-    background:
-      radial-gradient(1000px 500px at 100% -10%, var(--accent-soft), transparent 62%),
-      radial-gradient(800px 420px at -10% 18%, rgba(94,92,230,.09), transparent 60%),
-      var(--bg);
+    background:var(--bg);
     color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro SC","Helvetica Neue",Arial,sans-serif;
     font-size:16px;
-    line-height:1.75;
+    line-height:1.8;
     -webkit-font-smoothing:antialiased;
   }
   main{
-    max-width:860px;
+    max-width:780px;
     margin:0 auto;
-    padding:32px 18px 64px;
+    padding:40px 18px 64px;
   }
   article{
     background:var(--card);
     border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:34px 26px 30px;
-    box-shadow:0 18px 50px rgba(20,24,32,.06);
+    border-radius:18px;
+    padding:34px 26px 28px;
   }
-  @media (prefers-color-scheme: dark){
-    article{box-shadow:0 18px 50px rgba(0,0,0,.28);}
-  }
-  header{border-bottom:1px solid var(--line);padding-bottom:22px;}
-  .badge{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:6px 12px;
-    border-radius:999px;
-    background:var(--accent-soft);
-    color:var(--accent-strong);
-    font-size:.84rem;
-    font-weight:650;
-    letter-spacing:.04em;
-    text-transform:uppercase;
-  }
-  .badge::before{
-    content:"";
-    width:8px;
-    height:8px;
-    border-radius:2px;
-    background:var(--accent);
-    transform:rotate(45deg);
-  }
+  header{border-bottom:1px solid var(--line);padding-bottom:20px;}
   h1{
-    margin:16px 0 10px;
-    font-size:clamp(1.7rem, 5vw, 2.25rem);
-    line-height:1.22;
-    letter-spacing:-.018em;
-    font-weight:750;
+    margin:0 0 8px;
+    font-size:clamp(1.6rem, 4.6vw, 2rem);
+    line-height:1.3;
+    font-weight:700;
+    letter-spacing:-.01em;
   }
-  .meta{
-    color:var(--faint);
-    font-size:.9rem;
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px 16px;
-  }
+  .meta{color:var(--faint);font-size:.9rem;}
   .lead{
     margin:18px 0 0;
     color:var(--muted);
-    font-size:1.02rem;
+    font-size:1.01rem;
   }
-  .lead strong{color:var(--text);font-weight:650;}
-  nav.toc{
-    margin:24px 0 0;
-    padding:16px 18px;
-    border:1px solid var(--line);
-    border-radius:16px;
-    background:linear-gradient(180deg, var(--accent-soft), transparent);
-  }
-  nav.toc .toc-title{
-    font-size:.8rem;
-    font-weight:700;
-    color:var(--accent-strong);
-    letter-spacing:.10em;
-    margin-bottom:8px;
-    text-transform:uppercase;
-  }
-  nav.toc ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-    display:grid;
-    grid-template-columns:repeat(2, minmax(0,1fr));
-    gap:4px 18px;
-  }
-  nav.toc a{
-    color:var(--muted);
-    text-decoration:none;
-    font-size:.9rem;
-    border-bottom:1px solid transparent;
-  }
-  nav.toc a:hover{border-bottom-color:var(--line-strong);color:var(--text);}
-  section{margin-top:32px;}
   h2{
-    font-size:1.22rem;
-    line-height:1.35;
-    margin:0 0 12px;
-    letter-spacing:-.01em;
-    font-weight:720;
+    font-size:1.12rem;
+    line-height:1.4;
+    margin:26px 0 8px;
+    font-weight:650;
   }
-  h2 .num{
-    color:var(--accent);
-    font-variant-numeric:tabular-nums;
-    margin-right:8px;
-  }
-  h3{
-    font-size:1.02rem;
-    margin:22px 0 6px;
-    color:var(--text);
-    font-weight:680;
-  }
-  p{margin:10px 0;color:var(--muted);}
-  strong{color:var(--text);font-weight:650;}
-  ul,ol{margin:10px 0;padding-left:1.35em;color:var(--muted);}
-  li{margin:6px 0;}
+  p{margin:8px 0;color:var(--muted);}
+  ul{margin:8px 0;padding-left:1.3em;color:var(--muted);}
+  li{margin:5px 0;}
   li::marker{color:var(--accent);}
-  .facts{
-    margin:18px 0 8px;
-    display:grid;
-    grid-template-columns:repeat(2, minmax(0,1fr));
-    gap:10px;
-  }
-  .fact{
-    border:1px solid var(--line);
-    border-radius:14px;
-    padding:12px 14px;
-    background:rgba(127,127,127,.035);
-  }
-  .fact dt{
-    font-size:.76rem;
-    color:var(--faint);
-    letter-spacing:.06em;
-    margin-bottom:2px;
-    text-transform:uppercase;
-  }
-  .fact dd{
-    margin:0;
-    font-size:.95rem;
-    color:var(--text);
-    line-height:1.55;
-  }
-  .table-wrap{
-    margin:18px 0 6px;
-    border:1px solid var(--line);
-    border-radius:14px;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-  }
-  table{
-    width:100%;
-    border-collapse:collapse;
-    font-size:.9rem;
-    min-width:560px;
-  }
-  th,td{
-    text-align:left;
-    vertical-align:top;
-    padding:12px 14px;
-    border-bottom:1px solid var(--line);
-  }
-  tr:last-child td{border-bottom:none;}
-  th{
-    font-size:.76rem;
-    letter-spacing:.06em;
-    color:var(--accent-strong);
-    background:var(--accent-soft);
-    font-weight:700;
-    white-space:nowrap;
-  }
-  td{color:var(--muted);}
-  td:first-child{color:var(--text);font-weight:600;}
-  .callout{
-    margin:18px 0;
-    padding:14px 16px;
-    border-left:3px solid var(--accent);
-    border-radius:0 12px 12px 0;
-    background:var(--accent-soft);
-    color:var(--muted);
-    font-size:.95rem;
-  }
-  .callout strong{color:var(--text);}
-  code{
-    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-    font-size:.88em;
-    color:var(--text);
-    background:var(--mark);
-    border-radius:5px;
-    padding:1px 5px;
-  }
-  .divider{
-    height:1px;
-    background:var(--line);
-    margin:32px 0 0;
-  }
+  strong{color:var(--text);font-weight:650;}
   footer{
-    margin-top:22px;
-    padding-top:18px;
+    margin-top:28px;
+    padding-top:16px;
     border-top:1px solid var(--line);
     color:var(--faint);
     font-size:.86rem;
   }
-  footer .org{color:var(--muted);font-weight:600;}
-  footer .row{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:4px;}
-  a{color:var(--accent-strong);}
   @media (max-width:560px){
     main{padding:16px 12px 40px;}
-    article{padding:24px 18px 22px;border-radius:18px;}
-    nav.toc ul{grid-template-columns:1fr;}
-    .facts{grid-template-columns:1fr;}
-    table{min-width:480px;font-size:.85rem;}
-    th,td{padding:10px 11px;}
+    article{padding:26px 18px 22px;border-radius:14px;}
   }
   @media print{
     body{background:#fff;}
     main{padding:0;max-width:none;}
-    article{border:none;box-shadow:none;padding:0;}
-    nav.toc{display:none;}
+    article{border:none;padding:0;}
   }
 </style>
 </head>
@@ -270,181 +97,54 @@
 <main>
 <article>
   <header>
-    <span class="badge">Oddkit</span>
     <h1>Privacy Policy</h1>
-    <div class="meta">
-      <span>Last updated: November 26, 2026</span>
-      <span>Effective: November 26, 2026</span>
-      <span>Version 1.0</span>
-    </div>
-    <p class="lead">Oddkit is a collection of small iOS utilities that you reach for now and then. <strong>The app has no account system, no servers operated by us, and your feature data is not uploaded to us.</strong> This policy explains, item by item, what the app accesses, why, and which processing stays on your device.</p>
+    <div class="meta">Last updated: November 26, 2026</div>
+    <p class="lead">This Privacy Policy applies to Oddkit (偶用) for iOS. The app is developed and maintained by an individual developer. We keep your data on your device wherever possible: the app has no account system, no servers operated by us, and your personal information is not uploaded to us.</p>
   </header>
 
-  <nav class="toc" aria-label="Contents">
-    <div class="toc-title">Contents</div>
-    <ul>
-      <li><a href="#operator">1. Operator and scope</a></li>
-      <li><a href="#principles">2. What we do not do</a></li>
-      <li><a href="#data">3. Information we access</a></li>
-      <li><a href="#sharing">4. Third parties</a></li>
-      <li><a href="#security">5. Data security</a></li>
-      <li><a href="#rights">6. Your rights</a></li>
-      <li><a href="#children">7. Children</a></li>
-      <li><a href="#changes">8. Policy updates</a></li>
-      <li><a href="#contact">9. Contact us</a></li>
-    </ul>
-  </nav>
+  <h2>1. Information the App Processes</h2>
+  <p>The app processes the following information on your device only after you use a feature and agree to the system permission prompt:</p>
+  <ul>
+    <li><strong>Camera</strong>: used for AR measurement, the live compass, the camera level, the mirror in the dark, and party draw photos. Frames stay on your device and are not uploaded. The only photo saved is a site photo you choose to keep in a report.</li>
+    <li><strong>Location</strong>: used for solar calculations, compass direction and nearby places. The app requests While Using access only and does not track you in the background. You can also enter coordinates manually.</li>
+    <li><strong>Contacts</strong>: used to calculate pinyin initials from Chinese names and write them into the name field you choose. Original values are saved so you can restore them in one tap. Contacts stay on your device and are not uploaded.</li>
+    <li><strong>Photos</strong>: the app reads only the single image you choose through the system photo picker. It does not browse your library.</li>
+    <li><strong>Motion and orientation</strong>: used to detect device posture for level guides and direction.</li>
+    <li><strong>Purchase status</strong>: the app reads only the entitlement status provided by Apple to determine whether features are unlocked. It never sees your payment card or billing details.</li>
+  </ul>
+  <p>This information is used only to provide the relevant features. It is not used for advertising, profiling or model training.</p>
 
-  <section id="operator">
-    <h2><span class="num">1</span>Operator and scope</h2>
-    <p>This policy applies to the Oddkit iOS app (Chinese name 偶用, Bundle ID <code>cn.qidoqi.sometimes</code>) and the same text published on the developer's website. The in-app copy is available under Settings → Privacy Policy in both Simplified Chinese and English, and matches the website version.</p>
-    <div class="facts">
-      <dl class="fact"><dt>Operator</dt><dd>Hangzhou Linping Lailailai Information Technology Studio</dd></dl>
-      <dl class="fact"><dt>Contact email</dt><dd>hellobanny@gmail.com</dd></dl>
-      <dl class="fact"><dt>Website ICP filing</dt><dd>浙ICP备2026094092号-1</dd></dl>
-      <dl class="fact"><dt>Product</dt><dd>Oddkit for iOS 17.0 and later</dd></dl>
-    </div>
-  </section>
+  <h2>2. Use and Retention</h2>
+  <p>Feature data is stored in the app's local data directory until you delete it or uninstall the app. Saved contact originals are kept until you restore them or uninstall the app. We do not sell, rent or disclose your personal information to unrelated third parties.</p>
 
-  <section id="principles">
-    <h2><span class="num">2</span>What we do not do</h2>
-    <ul>
-      <li>We do not require an account, and we do not collect a phone number, email address or password for sign-in.</li>
-      <li>We do not build user profiles, run advertising, or include any advertising SDK.</li>
-      <li>We do not integrate third-party analytics, crash reporting, social login or data-mining SDKs. The current version does not even enable first-party event tracking.</li>
-      <li>We do not sell, rent or trade your personal information.</li>
-      <li>We do not track your location in the background, read photos you did not select or authorize, or use contacts, photos or location for advertising or model training.</li>
-    </ul>
-    <p>To be clear: to make a feature work, the app may read or modify some information on your device, such as contact fields, camera frames or location coordinates. That happens only after you open the relevant feature. Details follow.</p>
-  </section>
+  <h2>3. Permissions</h2>
+  <p>The app requests permissions only when you use a feature that needs them. You can turn off Camera, Location, Contacts and similar permissions at any time in iOS Settings → Oddkit. Denying a permission affects only that feature and does not block the other tools.</p>
 
-  <section id="data">
-    <h2><span class="num">3</span>Information we access and how we use it</h2>
-    <p>The table summarizes the current version. Each permission is explained in more detail below.</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Information or permission</th><th>Purpose</th><th>Leaves the device?</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Camera</td><td>AR measurement, live compass, camera level, mirror in the dark, draw-photo tokens</td><td>No. Frames are processed on device in real time. A site photo is written to a local report only if you choose to keep it.</td></tr>
-          <tr><td>Location (While Using)</td><td>Solar path and daylight duration, true north, nearby places</td><td>Coordinates are not sent to our servers. Nearby-place searches and place-name lookup are sent to Apple Maps.</td></tr>
-          <tr><td>Contacts</td><td>Generate pinyin initials, write them into the name field you choose, and restore originals</td><td>Processed on device. Written fields sync with iCloud Contacts if enabled, and are included when you share a contact card.</td></tr>
-          <tr><td>Motion and orientation</td><td>Detect device posture to lock level lines and direction</td><td>No. Used on device only.</td></tr>
-          <tr><td>Photos you select</td><td>Draw-token background, site photo in a daylight report</td><td>No. Used only in that feature, or saved to your own local report.</td></tr>
-          <tr><td>Purchase status</td><td>Verify lifetime unlock and the 72-hour pass</td><td>Transactions are handled by Apple. The app reads only product and transaction status.</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <h2>4. Third-Party Services</h2>
+  <p>The app uses Apple system services for some features:</p>
+  <ul>
+    <li>When you search for nearby places or a place name, your current location may be sent to Apple Maps and handled under Apple's privacy policy.</li>
+    <li>Purchases and restore purchases are handled by Apple.</li>
+    <li>If you enable iCloud Contacts sync or device backup, the relevant data is handled by Apple.</li>
+  </ul>
+  <p>Other than these cases and where required by law, we do not disclose your personal information to third parties. The app contains no advertising, third-party analytics or data-mining SDK.</p>
 
-    <h3>3.1 Camera</h3>
-    <p>Camera access is requested only when you enter a feature that needs the camera. Each feature handles frames differently:</p>
-    <ul>
-      <li><strong>Balcony Sunlight</strong> uses the AR camera view to help you outline a balcony or window. When generating a report you may take an optional site photo; only if you keep it is the photo written to the app's local report folder, where it can be viewed on device or shared by you.</li>
-      <li><strong>AR Compass</strong> overlays the live camera view on a direction scale. It does not take, save or upload photos.</li>
-      <li><strong>Camera Level</strong> shows a preview with horizontal and vertical guides. It does not take or save photos.</li>
-      <li><strong>Mirror in the Dark</strong> shows the front camera as a mirror, with white areas above and below as fill light. It does not take or save photos. It raises screen brightness to maximum while open and restores it when you leave.</li>
-      <li><strong>Party Draw</strong> can photograph a participant to create a draw token. The photo lives only in memory for that game and is discarded when you leave the feature; it is not written to Photos or to a local file.</li>
-    </ul>
+  <h2>5. Data Security</h2>
+  <p>Feature data is stored in the iOS app sandbox and protected by system data protection. We operate no servers and have no back office that can view your feature data.</p>
 
-    <h3>3.2 Location (While Using)</h3>
-    <p>The app requests “While Using the App” location only. It does not request background location, continuously track you, or store a movement history. Location is used to:</p>
-    <ul>
-      <li><strong>Balcony Sunlight</strong>: compute the solar path, daylight duration and winter-solstice indicators from latitude and longitude. You can also type coordinates manually and use the feature without granting location.</li>
-      <li><strong>AR Compass</strong>: convert magnetic north to true north, and look up landmarks around you for “Nearby Places”.</li>
-    </ul>
-    <p>Your coordinates are not sent to our servers. Two kinds of requests go to Apple's map services: when you search for nearby places, the current coordinate and search radius are sent to Apple Maps; when Balcony Sunlight cannot obtain a place name from the system, it sends the coordinate to Apple for a one-time reverse geocode to obtain a city or district name. Apple and its map data providers handle those requests under Apple's own privacy policy.</p>
+  <h2>6. Your Rights</h2>
+  <p>You can view and edit contact fields, delete reports inside the feature, or turn permissions off in system settings. Uninstalling the app clears the feature data stored on your device. If you have questions about this policy, contact us at the email below.</p>
 
-    <h3>3.3 Contacts (Contact Quick Search)</h3>
-    <p>This feature reads and modifies contacts so that typing <code>zsf</code> in Spotlight or Contacts can find 张三丰. The scope is limited:</p>
-    <ul>
-      <li><strong>Reading</strong>: after you tap “Write initials” and grant access, the app reads contact names (family name, given name, nickname, phonetic name), organization name, the first phone number and the first email address. Phone and email are used only to filter by the “has a phone or email” scope and to show the last digits; they are not written anywhere.</li>
-      <li><strong>Writing</strong>: the pinyin initials computed from a Chinese name (for example <code>zsf</code>) are written into the field you choose — Phonetic Given Name or Nickname. The app does not create contacts, delete contacts, or change phone numbers, email addresses, organization names or any other field.</li>
-      <li><strong>Local ledger</strong>: for each modified contact, the app stores the contact identifier, field name, original value and written value so that “Restore originals and turn off” can put things back exactly. The ledger stays in the app's local data container and is not uploaded.</li>
-      <li><strong>System indexing and sync</strong>: because the app writes to contact fields themselves, iOS Contacts and Spotlight index that content on device. If you enable iCloud Contacts, those fields sync to your other devices; sharing a contact card also includes them. The app does not create its own cloud index.</li>
-      <li><strong>Withdrawal and cleanup</strong>: “Restore originals and turn off” writes the stored originals back and clears the ledger. “Clean up leftover initials” does not rely on the ledger; it recomputes initials from names and removes them. Before uninstalling the app, restore first — otherwise the ledger is deleted with the app and written initials must be handled manually.</li>
-      <li><strong>Legacy index</strong>: an earlier version created a separate Spotlight index. The current version removes those legacy entries when enabling or restoring, and does not create new ones.</li>
-    </ul>
-    <div class="callout"><strong>Please note:</strong> contacts are sensitive personal information. Writing initials is entirely your choice, and denying contacts access does not affect other features. Once written, the initials appear in the field you selected and may leave the device through iCloud sync or a shared contact card. That is how contact sync works; it is not an upload by the app.</div>
+  <h2>7. Children's Privacy</h2>
+  <p>Oddkit is a general-purpose utility. It is not specifically designed for children and does not collect children's personal information. If a guardian finds that a child has used a permission-protected feature without consent, they can turn the permission off in system settings or uninstall the app.</p>
 
-    <h3>3.4 Motion and orientation sensors</h3>
-    <p>The app reads gravity and device attitude through Core Motion to tell whether the phone is level and which way it faces. This supports the level guides, compass direction and AR measurement. The data is used on device only; it is not written to Health and is not uploaded.</p>
+  <h2>8. Changes to This Policy</h2>
+  <p>If features or data practices change, we will update this policy and release it with an app version. For material changes, we will notify you in the app or in the release notes.</p>
 
-    <h3>3.5 Photos you select</h3>
-    <p>Party Draw can use a photo from your library as a draw-token background. It uses the iOS system photo picker: the app receives only the single image you tap, cannot browse or read other photos, and does not request full photo-library access for this feature. The image is used only in that game and is not saved or uploaded.</p>
-    <p>The optional site photo in Balcony Sunlight likewise comes from a single image you take or select. The Pixel Ruler feature is not included in the current release; if it is enabled later, imported screenshots will also be processed only on device.</p>
+  <h2>9. Contact Us</h2>
+  <p>Developer: individual developer<br>Email: hellobanny@gmail.com</p>
 
-    <h3>3.6 Purchases and entitlements</h3>
-    <p>Lifetime Unlock (non-consumable) and the 72-Hour Pass (consumable) are handled through Apple StoreKit. We do not receive your card number, billing address or Apple ID password; the app reads only the product ID, transaction ID, purchase or revocation status and expiry.</p>
-    <p>Lifetime access follows Apple's verified transaction result. The 72-hour pass expiry is stored in the local Keychain so the window can continue while active. Keychain data may migrate with a system backup, but restoration after a device change or reinstall is not guaranteed, as stated on the purchase screen.</p>
-
-    <h3>3.7 Local data and settings</h3>
-    <p>Feature data lives in the app sandbox under <code>Application Support/Features/&lt;feature ID&gt;</code>. It includes daylight reports, thumbnails and site photos, the contacts ledger, and per-feature settings such as frame position, draw-music preference and measured device weight. Settings use a separate UserDefaults suite per feature and do not touch the global domain.</p>
-    <p><strong>Retention</strong>: daylight reports and site photos are kept until you delete the report or uninstall the app; the contacts ledger is kept until you restore or uninstall; feature settings are kept until you change them or uninstall; the 72-hour pass expiry stays in the Keychain until it expires, is replaced by a new transaction, or is cleared by the system. We hold no server copy, so there is nothing extra for us to retain or delete.</p>
-    <p>The app does not write feature data to iCloud Documents or CloudKit. If you enable iCloud device backup, the app sandbox may be included in Apple's encrypted system backup, which Apple handles. Uninstalling the app deletes sandbox data; the pass record in the Keychain may survive a reinstall, which is system behavior.</p>
-  </section>
-
-  <section id="sharing">
-    <h2><span class="num">4</span>Third parties and disclosures</h2>
-    <p>We do not disclose your personal information to third parties except in these cases:</p>
-    <ol>
-      <li><strong>Apple system services</strong>: Apple Maps and geocoding, StoreKit purchases, iCloud Contacts sync and device backup, as needed to provide the features described above.</li>
-      <li><strong>Legal requirements</strong>: where required by law, or by a judicial or administrative authority following lawful procedure.</li>
-      <li><strong>Vital interests</strong>: where necessary to protect your or another person's life, property or other major interests.</li>
-    </ol>
-    <p>We do not sell personal information. We do not transfer personal information across borders ourselves; Apple services such as Maps and StoreKit may process data at facilities inside or outside your region under Apple's privacy policy. The app contains no third-party advertising, analytics or data-broker SDK.</p>
-  </section>
-
-  <section id="security">
-    <h2><span class="num">5</span>Data security</h2>
-    <ul>
-      <li><strong>Transmission</strong>: the app does not transmit data to our servers. Requests to Apple services are made by system frameworks over encrypted connections.</li>
-      <li><strong>Storage</strong>: feature data sits in the iOS app sandbox and is subject to system data protection. Purchase credentials are stored in the Keychain.</li>
-      <li><strong>Permissions</strong>: we follow least privilege and request access only when you use a feature. Denying a permission affects that feature only; you can turn permissions off at any time in iOS Settings → Oddkit.</li>
-      <li><strong>Support</strong>: the app is maintained by an individual developer and there is no support backend that can view your feature data. When asking for help, share only screenshots or descriptions you are comfortable making public — please do not send contacts, original reports or other sensitive files.</li>
-    </ul>
-  </section>
-
-  <section id="rights">
-    <h2><span class="num">6</span>Your rights</h2>
-    <p>Under the Personal Information Protection Law of the People's Republic of China and other applicable laws, you may access, correct, withdraw consent to and delete your personal information. Because the data is mainly on your device, most actions are direct:</p>
-    <ul>
-      <li><strong>Access and correction</strong>: contact fields can be viewed and edited in the system Contacts app; daylight reports can be viewed in the feature; settings can be adjusted in the relevant feature.</li>
-      <li><strong>Withdraw consent</strong>: turn off Camera, Location, Contacts and Motion & Fitness in iOS Settings → Oddkit, or use “Restore originals and turn off” inside the feature.</li>
-      <li><strong>Deletion</strong>: delete individual daylight reports in the feature, or delete the app to clear sandbox data. We hold no copy of your data, so no separate server-side deletion request is needed.</li>
-      <li><strong>Questions and complaints</strong>: email <strong>hellobanny@gmail.com</strong> and we will reply within 15 business days.</li>
-    </ul>
-    <p>Depending on where you live, you may have additional rights under local law. We will honor valid requests that apply to the data we actually control, which is limited to the information described in this policy.</p>
-  </section>
-
-  <section id="children">
-    <h2><span class="num">7</span>Children</h2>
-    <p>Oddkit is a general-purpose utility, is not specifically designed for children, does not collect children's personal information, and does not ask for age. If a guardian finds that a child has used a permission-protected feature without consent, they can turn the permission off in system settings or delete the app, and contact us at the email above.</p>
-  </section>
-
-  <section id="changes">
-    <h2><span class="num">8</span>Policy updates</h2>
-    <p>When features or data practices change, we update this policy and publish the new version in the app and on the website together, with the last-updated date at the top. For material changes — such as adding uploads, a third-party SDK, a new permission or a new purpose — we will notify you in the app or in release notes before they take effect, and will ask for consent again where required.</p>
-  </section>
-
-  <section id="contact">
-    <h2><span class="num">9</span>Contact us</h2>
-    <p>If you have any question about this policy or how Oddkit handles data, please contact us:</p>
-    <div class="facts">
-      <dl class="fact"><dt>Operator</dt><dd>Hangzhou Linping Lailailai Information Technology Studio</dd></dl>
-      <dl class="fact"><dt>Email</dt><dd>hellobanny@gmail.com</dd></dl>
-      <dl class="fact"><dt>Website ICP filing</dt><dd>浙ICP备2026094092号-1</dd></dl>
-      <dl class="fact"><dt>App</dt><dd>Oddkit</dd></dl>
-    </div>
-    <div class="divider"></div>
-    <footer>
-      <div class="org">Oddkit · Hangzhou Linping Lailailai Information Technology Studio</div>
-      <div class="row">
-        <span>Also available in the app under Settings → Privacy Policy</span>
-        <span>浙ICP备2026094092号-1</span>
-      </div>
-    </footer>
-  </section>
+  <footer>Oddkit · Individual developer</footer>
 </article>
 </main>
 </body>
